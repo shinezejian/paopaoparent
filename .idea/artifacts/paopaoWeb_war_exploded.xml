@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="paopaoWeb:war exploded">
+    <output-path>$PROJECT_DIR$/paopaoWeb/target/paopaoWeb</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="paopaoWeb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="ordermgr-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="ordermgr" />
+          </element>
+          <element id="archive" name="common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="common" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/paopaoWeb/target/paopaoWeb/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="paopaoWeb/web/Web" />
+      <element id="artifact" artifact-name="cartmgr:war exploded" />
+      <element id="artifact" artifact-name="customermgr:war exploded" />
+      <element id="artifact" artifact-name="goodsmgrweb:war exploded" />
+    </root>
+  </artifact>
+</component>
