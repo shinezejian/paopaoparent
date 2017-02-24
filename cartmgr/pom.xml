@@ -22,23 +22,36 @@
 
     <build>
         <finalName>cartmgr</finalName>
-            <plugins>
-                <plugin>
-                    <groupId>org.mortbay.jetty</groupId>
-                    <artifactId>maven-jetty-plugin</artifactId>
-                    <version>6.1.7</version>
-                    <configuration>
-                        <connectors>
-                            <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-                                <port>8888</port>
-                                <maxIdleTime>30000</maxIdleTime>
-                            </connector>
-                        </connectors>
-                        <webAppSourceDirectory>${project.build.directory}/${pom.artifactId}-${pom.version}
-                        </webAppSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>8.1.9.v20130131</version>
+                <configuration>
+                    <webApp>
                         <contextPath>/cart</contextPath>
-                    </configuration>
-                </plugin>
+                    </webApp>
+                    <connectors>
+                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                            <port>8889</port>
+                            <maxIdleTime>60000</maxIdleTime>
+                        </connector>
+                    </connectors>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <!--注意增加这两行，在打包时相关的类会被独立打成jar -->
+                    <attachClasses>true</attachClasses>
+                    <classesClassifier>api</classesClassifier>
+                </configuration>
+                <version>2.4</version>
+                <executions>
+                </executions>
+            </plugin>
             </plugins>
     </build>
 </project>

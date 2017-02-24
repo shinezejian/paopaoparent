@@ -12,14 +12,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
-<link href="../../static/css/application.css" rel="stylesheet">
-<script src="../../static/js/jquery-1.11.0.js"></script>
+<link href="${pageContext.request.contextPath}/static/css/application.css" rel="stylesheet">
+<script src="${pageContext.request.contextPath}/static/js/jquery-1.11.0.js"></script>
 </head>
 <body>
 <script type="text/javascript">
 	$().ready(function(){
 		$("#btn_query").click(function(){
-			
+
 		    var json = '{"customerId":"'+$("#customerId").val()+'"'+
 		    	       ',"pwd":"'+$("#pwd").val()+'"'+
 		    	       ',"showName":"'+$("#showName").val()+'"'+

@@ -12,7 +12,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
-<link href="../../static/css/application.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/static/css/application.css" rel="stylesheet">
 </head>
 <body>
 <form action="${pageContext.request.contextPath}/customer/delete" method="post">

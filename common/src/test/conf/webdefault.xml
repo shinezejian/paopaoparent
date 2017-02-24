@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<web-app
+<com.paopao.shop.cartmgr.web-app
         xmlns="http://java.sun.com/xml/ns/j2ee"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/com.paopao.shop.cartmgr.web-app_2_4.xsd"
         version="2.4">
 
     <description>
-        Default web.xml file.
-        This file is applied to a Web application before it's own WEB_INF/web.xml file
+        Default com.paopao.shop.cartmgr.web.xml file.
+        This file is applied to a Web application before it's own WEB_INF/com.paopao.shop.cartmgr.web.xml file
     </description>
 
 
@@ -274,5 +274,5 @@
     </locale-encoding-mapping-list>
 
 
-</web-app>
+</com.paopao.shop.cartmgr.web-app>
 

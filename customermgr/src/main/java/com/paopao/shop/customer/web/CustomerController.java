@@ -2,7 +2,6 @@ package com.paopao.shop.customer.web;
 
 
 import com.paopao.shop.customer.service.CustomerService;
-import com.paopao.shop.customer.service.ICustomerService;
 import com.paopao.shop.customer.vo.CustomerModel;
 import com.paopao.shop.customer.vo.CustomerQueryModel;
 import com.paopao.shop.pageutil.Page;
